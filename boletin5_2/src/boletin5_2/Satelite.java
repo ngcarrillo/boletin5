@@ -30,6 +30,6 @@ distanciaTerra = d ;
 public void verPosicion ( ) {
 
 System.out.println (" O satelite atopase no paralelo " +paralelo +" meridiano " +meridiano +"a unha distancia da terra "+distanciaTerra ); 
-    //ss
+    //s
 }
 }
