@@ -6,6 +6,8 @@
 
 package boletin5_4;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author ngarciacarrillo
@@ -17,6 +19,20 @@ public class Boletin5_4 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+    
+    int Patacas= Integer.parseInt(JOptionPane.showInputDialog("Introduce a cantidade de patacas"));
+    int Polbo= Integer.parseInt(JOptionPane.showInputDialog( "Introduce os kg de Polbo"));
+    MateriaPrima materiaPrima1 =new MateriaPrima();
+    materiaPrima1.EngadirPatacas(Patacas);
+    materiaPrima1.EngadirPolbo(Polbo);
+    JOptionPane.showMessageDialog(null,"Os kg de patacas son"+materiaPrima1.MostrarPatacas());
+    JOptionPane.showMessageDialog(null, "Os kg de polbo son "+materiaPrima1.MostrarPolbo());
+    JOptionPane.showMessageDialog(null, "Os cliente que podemos servir patacas son "+materiaPrima1.AmosarClientesPatacas());
+    JOptionPane.showMessageDialog (null,"Os clientes os que podemos servir polbo son "+materiaPrima1.AmosarClientesPolbo());
+    JOptionPane.showMessageDialog(null, "Os clientes TOTALES os que podemos servir son "+materiaPrima1.AmosarClientesTotales());
+    
+    
+            
     }
     
 }
